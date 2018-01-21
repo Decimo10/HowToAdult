@@ -1,10 +1,104 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type = "text/css" href="cssSubHeadings.css">
-    <h1 align="center"> C L E A N I N G </h1>
+    <head>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="home.css">
+      <link rel="stylesheet" type = "text/css" href="cssSubHeadings.css">
+      <!-- NAV BAR!! -->
+        <style>
+        body {
+            font-family: "Gill Sans", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 30px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+
+        <!-- END OF NAV BAR -->
   </head>
-  <body bgcolor="#FFFFF0">
+
+  <body >
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html"> HOME</a>
+      <div class="dropdown show">
+       <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> CATEGORIES </a>
+       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+         <a class="dropdown-item" href="Finances.html">FINANCES</a>
+         <a class="dropdown-item" href="Cooking.html">COOKING</a>
+         <a class="dropdown-item" href="Cleaning.html">CLEANING</a>
+         <a class="dropdown-item" href="Professionalism.html">PROFESSIONALISM</a>
+         <a class="dropdown-item" href="Mental Health.html">MENTAL HEALTH</a>
+       </div>
+      </div>
+      <a href="maps.html">MAPS</a>
+      <a href="Quizzes2.html">QUIZZES</a>
+      <a href="status.html">STATUS</a>
+    </div>
+
+    <div id="main">
+      <div id="Wrapper">
+        <header>
+        <span style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+        <h1> C L E A N I N G </h1>
+      </header>
+      </div>
     <h3 align="center"> L A U N D R Y </h3>
     <p align="center"> You will need: dirty laundry, laundry detergent (or PODS but not for eating),
        money (quarters or card) - this stuff isn’t free </p>
@@ -31,45 +125,46 @@
         if you are not the only one using it. The first thing to do when cleaning a
          bathroom is to maintain it - which means a regular schedule for cleaning it.
          This could be once a week, every other week, etc.  </p>
-<p> Now to the cleaning part. The three main parts of a bathroom are: the sink, the toilet, the shower. (just in case you didn’t know).</p>
+         <p> Now to the cleaning part. The three main parts of a bathroom are: the sink, the toilet, the shower (just in case you didn’t know).</p>
 
-<h4 align="center"> The Sink </h4>
-<p> If you are having trouble getting your sink to drain properly, pour white vinegar
-   or baking soda down the drain and flush with hot water. For the faucet, you can just
-   use vinegar and a towel to scrub down the faucet and handles. </p>
+  <h4 align="center"> The Sink </h4>
+    <p> If you are having trouble getting your sink to drain properly, pour white vinegar
+     or baking soda down the drain and flush with hot water. For the faucet, you can just
+     use vinegar and a towel to scrub down the faucet and handles. </p>
 
    <h4 align="center"> The Toilet </h4>
      <p> Toilet - There are a ton of different products that you can buy from the store to clean the toilet.
-        But an easy and cheaper option is to just pour a cup of baking soda in your toilet bowl, scrub, and flush. </p>
-<p> TIP: Many of the cleaning products contain very harmful chemicals that are bad for the environment
-   (so another good reason for the baking soda option).</p>
+        An easy and cheaper option is to pour a cup of baking soda in your toilet bowl, scrub, and flush. </p>
+      <p> TIP: Many of the cleaning products contain very harmful chemicals that are bad for the environment. Guess what isn't bad for the environment? Baking soda.</p>
+
         <h4 align="center"> The Shower </h4>
-        <p>  The water minerals and soap scum over time will build up in your tub and can be pretty disgusting.
-           A pretty easy hack that you can do is dip a cloth in some white vinegar and scrub your tub. Also,
-           if your shower head starts to get clogged, you can fill a bag full of white vinegar to get
-            the shower head to function better. </p>
+        <p>  The water minerals and soap scum will build up in your tub over time and can be pretty disgusting.
+           A easy hack is dip a cloth in some white vinegar and scrub the surface you want cleaned. Also,
+           if your shower head starts to get clogged, tie a bag full of whtie vinegar over the shower head and leave the bag on overnight. </p>
 
 
     <h3 align="center"> S T A I N S </h3>
-      <p> First thing to do when you have just gotten a stain - on clothing or carpet/fabric -
-        Put water on the stain <b>immediately</b> - and do not scrub but <a href="https://media.giphy.com/media/lae7QSMFxEkkE/giphy.gif " target="_blank"></a>. Water works on most things -
-         pretty universal.Detergent, vinegar, lemon juice, salt are other solvents that you can use for specific stains.</p>
+      <p> First thing to do when you get a stain - on clothing or carpet/fabric -
+        is to put water on the stain <b>immediately</b> - and do not scrub but <a href="https://media.giphy.com/media/lae7QSMFxEkkE/giphy.gif " target="_blank"> dab </a>. Detergent, vinegar, lemon juice, salt are other solvents that you can use for stains.</p>
+
     <h3 align="center"> H O W &nbsp T O &nbsp U S E &nbsp B L E A C H </h3>
       <p> “DO NOT INGEST” </p>
-      <p>If your washing machine does not have a bleach dispenser: mix the water in the washing machine with detergent
-        and bleach then put clothes in - not before. If your washing machine has a bleach dispenser: pour bleach
+      <p>If your washing machine does not have a bleach dispenser, then mix the water in the washing machine with detergent
+        and bleach then put clothes in - not before. If your washing machine has a bleach dispenser, then pour bleach
         into bleach dispenser until full. </p>
-    <h3 align="center"> <a href = ""> T A K E &nbsp Q U I Z &nbsp H E R E ! </a> </h3>
-=======
-    <h3> L A U N D R Y </h3>
-      <p> squeaky clean </p>
-    <h3> C L E A N I N G &nbsp T H E &nbsp B A T H R O O M </h3>
-      <p> </p>
-    <h3> S T A I N S </h3>
-      <p> </p>
-    <h3> H O W &nbsp T O &nbsp U S E &nbsp B L E A C H </h3>
-      <p> </p>
     <h3> <a href = ""> T A K E &nbsp Q U I Z &nbsp H E R E ! </a> </h3>
->>>>>>> 88112ee5aa0ecab6cf7b000f8db16ee96380fddb
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+
   </body>
 </html>
