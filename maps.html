@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="mapsStyle.css">
 
 
-<style>
+  <style>
     * {
       margin: 10px;
       padding: 10px;
@@ -33,58 +33,62 @@
   </style>
 
   <!-- NAV BAR!! -->
-    <style>
+  <style>
     body {
-        font-family: "Gill Sans", sans-serif;
+      font-family: "Gill Sans", sans-serif;
     }
 
     .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
 
     }
 
     .sidenav a {
-        padding: 8px 8px 8px 30px;
-        text-decoration: none;
-        font-size: 15px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
+      padding: 8px 8px 8px 30px;
+      text-decoration: none;
+      font-size: 15px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
     }
 
     .sidenav a:hover {
-        color: #f1f1f1;
+      color: #f1f1f1;
     }
 
     .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
     }
 
     #main {
-        transition: margin-left .5s;
-        padding: 16px;
+      transition: margin-left .5s;
+      padding: 16px;
     }
 
     @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
     }
-    </style>
+  </style>
 
-    <!-- END OF NAV BAR -->
+  <!-- END OF NAV BAR -->
 </head>
 
 <body>
@@ -103,70 +107,79 @@
     <div id="Wrapper">
       <header>
         <span style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-      <h1>M A P S </h1>
-    </header>
+        <h1>M A P S </h1>
+      </header>
     </div>
 
-<div id="map"> </div>
+    <div id="map"> </div>
 
-  <script>
-    function initMap() {
-      var location = {
-        lat: 29.643632,
-        lng: -82.354930
-      };
-      var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: location
-      });
-      var marker = new google.maps.Marker({
-        position: location,
-        map: map
-      });
-    }
-  </script>
+    <script>
+      function initMap() {
+        var location = {
+          lat: 29.643632,
+          lng: -82.354930
+        };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
+    </script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuDJbu0KoVOMlQwSTArdEqYS0WCvUd03Q&callback=initMap">
-  </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuDJbu0KoVOMlQwSTArdEqYS0WCvUd03Q&callback=initMap">
+    </script>
 
-  <!-- AIzaSyBuDJbu0KoVOMlQwSTArdEqYS0WCvUd03Q -->
+    <!-- AIzaSyBuDJbu0KoVOMlQwSTArdEqYS0WCvUd03Q -->
 
-  <div style="text-align:center">
+    <!-- <div style="text-align:center">
     <form action="/action_page.php">
       City: <br>
-      <input type="text" name="city"><br><br> Annual Income: <br>
-      <input type="text" name="lastname"> <br><br>
+      <input type="text" name="city"><br><br>
+      Annual Income: <br>
+      <input type="text" name="annual income"> <br><br>
       <input type="submit" value="Submit">
     </form>
-  </div>
+  </div> -->
+
+    <div class="mapsDiv" align="right">
+      <h3 align="center">Can you actually afford your dream?</h3>
+      <textarea id="City" placeholder="Enter a city you want to live in"></textarea>
+      <button id="submitBtn" onclick="submitClick()" type="submit" value="Submit">Submit</button
+    <!-- FIREBASE SCRIPT -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <!-- <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB3fyN3jJxKJDdDOx1iHn4REU6_u_at9Vo",
+        authDomain: "howtoadult-f6e85.firebaseapp.com",
+        databaseURL: "https://howtoadult-f6e85.firebaseio.com",
+        projectId: "howtoadult-f6e85",
+        storageBucket: "",
+        messagingSenderId: "259851602310"
+      };
+      firebase.initializeApp(config);
+    </script> -->
+
+    <!-- END OF FIREBASE SCRIPT -->
+
+    <script src="maps.js"></script>
 
 
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
 
-<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyB3fyN3jJxKJDdDOx1iHn4REU6_u_at9Vo",
-    authDomain: "howtoadult-f6e85.firebaseapp.com",
-    databaseURL: "https://howtoadult-f6e85.firebaseio.com",
-    projectId: "howtoadult-f6e85",
-    storageBucket: "",
-    messagingSenderId: "259851602310"
-  };
-  firebase.initializeApp(config);
-</script>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
 
 </body>
 
