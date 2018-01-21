@@ -1,0 +1,77 @@
+
+/* background color of the body and other details */
+body {
+  background-color: #fdf5e6;
+  margin-top: 0;
+}
+
+#Wrapper {
+  max-width: inherit;
+  margin: 0 auto;
+  background-color: #3d85c6;
+  padding-bottom: 2vh;
+  text-align: left;
+  vertical-align: center;
+}
+
+/* background color of the actual header */
+header {
+  background-color: #3d85c6;
+  height: 150px;
+  padding-bottom: 20px;
+}
+
+/* details of the title "hacking adulthood" */
+header h1 {
+  text-align: center;
+  color: 	#fdf5e6;
+  font-size: 5vw;
+  vertical-align: middle;
+}
+
+h1 {
+  font-family: "Gill Sans", Sans-serif;
+  font-weight:200;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Gill Sans", Sans-serif;
+
+}
+
+h3 {
+  font-family:"Gill Sans",Sans-serif; font-size:2vw;
+  font-weight: bold;
+}
+
+.carousel-inner>.item>img {
+  margin: 0 auto;
+}
+
+#blurb {
+  text-align: center;
+  margin-top: 7vh;
+  font-size: 1.75vw;
+  margin-bottom: 7vh;
+}
+
+#features {
+  text-align: center;
+  margin-top: 7vh;
+  font-size: 3vw;
+  margin-bottom: 7vh;
+  font-weight: bold;
+
+}
+
+#left_hand {
+  margin-left: 7vh;
+  margin-right: 7vh;
+}
+
+#right_hand {
+  text-align: right;
+  margin-right: 7vh;
+  margin-left: 7vh;
+}
