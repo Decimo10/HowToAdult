@@ -1,0 +1,18 @@
+h1 {
+  font-family: "Gill Sans", Sans-serif; font-size: 5vw;
+  font-weight:200;
+}
+
+h3 {
+  font-family: "Gill Sans", Sans-serif; font-size: 30px;
+  font-weight:100;
+}
+
+#answerStyle {
+  font-family: "Gill Sans", sans-serif;
+}
+
+body{
+  background-color: #ffffe6;
+  margin-top: 10vh;
+}
