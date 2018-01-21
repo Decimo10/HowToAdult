@@ -1,10 +1,104 @@
 <!DOCTYPE html>
 <html>
+<head>
   <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type = "text/css" href="cssSubHeadings.css">
-    <h1 align="center"> M E N T A L &nbsp H E A L T H </h1>
-  </head>
-  <body bgcolor="#FFFFF0">
+    <!-- NAV BAR!! -->
+      <style>
+      body {
+          font-family: "Gill Sans", sans-serif;
+      }
+
+      .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+
+      }
+
+      .sidenav a {
+          padding: 8px 8px 8px 30px;
+          text-decoration: none;
+          font-size: 15px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+          color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
+
+      #main {
+          transition: margin-left .5s;
+          padding: 16px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      </style>
+
+      <!-- END OF NAV BAR -->
+</head>
+
+<body >
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"> HOME</a>
+    <div class="dropdown show">
+     <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> CATEGORIES </a>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+       <a class="dropdown-item" href="Finances.html">FINANCES</a>
+       <a class="dropdown-item" href="Cooking.html">COOKING</a>
+       <a class="dropdown-item" href="Cleaning.html">CLEANING</a>
+       <a class="dropdown-item" href="Professionalism.html">PROFESSIONALISM</a>
+       <a class="dropdown-item" href="Mental Health.html">MENTAL HEALTH</a>
+     </div>
+    </div>
+    <a href="maps.html">MAPS</a>
+    <a href="Quizzes2.html">QUIZZES</a>
+    <a href="status.html">STATUS</a>
+  </div>
+
+  <div id="main">
+    <div id="Wrapper">
+      <header>
+      <span style="font-size:40px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+      <h1> M E N T A L &nbsp H E A L T H </h1>
+    </header>
+    </div>
     <h3> Y O U &nbsp M A T T E R </h3>
       <p> These days it seems like time passes by so quickly. Blink, and it feels like you missed out on a memory, an event, an opportunity. Amidst this rapid whirlwind called life, it’s easy to forget to take care of yourself. Take some time everyday to focus on yourself. Put away your homework, treat yourself to your favorite food, and pull up your favorite TV show. Remember that you matter, and that there are people in this crazy mess of a world who care about you. If no one comes to mind, at least know that we care (we made this website for a reason).</p>
     <h3> I T ' S &nbsp A - O K A Y </h3>
@@ -22,6 +116,17 @@
         <li><b>Victim Center</b>: 1-800-FYI-CALL (1-800-394-2255)</li>
         <li><b>Youth Crisis Hotline</b>: 800-HIT-HOME</li>
       </ul>
-    <h3> <a href ="https://www.youtube.com/watch?v=zfohp33zDmM"> No quiz here. Just some quality Youtube content.</a> </h3>
+    <h3> <a href ="https://www.youtube.com/watch?v=zfohp33zDmM" target = "_blank"> No quiz here. Just some quality Youtube content.</a> </h3>
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
   </body>
 </html>
