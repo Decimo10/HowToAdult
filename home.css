@@ -5,12 +5,12 @@ body {
   margin-top: 0;
 }
 
-#wrapper {
+#Wrapper {
   max-width: inherit;
   margin: 0 auto;
   background-color: #3d85c6;
   padding-bottom: 2vh;
-  text-align: center;
+  text-align: left;
   vertical-align: center;
 }
 
